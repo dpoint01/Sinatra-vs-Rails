@@ -11,4 +11,9 @@
 <%= yield %>
 
 </body>
+<% if flash.any? %>
+  <div>
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 </html>
